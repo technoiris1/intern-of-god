@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqbduevmwsls3"]
+
+[ext_resource type="FontFile" uid="uid://cr7gvqx0vvkqv" path="res://assets/font/Jersey10-Regular.ttf" id="1_s2ta7"]
+
+[sub_resource type="Theme" id="Theme_ayt76"]
+default_font = ExtResource("1_s2ta7")
+
+[node name="Intro" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="Node" type="Node" parent="."]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Node"]
+offset_right = 1152.0
+offset_bottom = 522.0
+theme = SubResource("Theme_ayt76")
+theme_override_font_sizes/normal_font_size = 64
+theme_override_font_sizes/bold_font_size = 64
+theme_override_font_sizes/bold_italics_font_size = 64
+theme_override_font_sizes/italics_font_size = 64
+theme_override_font_sizes/mono_font_size = 64
+text = "Congratulations on achieving employment! Well, not really, you are still just an unpaid intern."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="skip" type="RichTextLabel" parent="."]
+offset_left = 843.0
+offset_top = 538.0
+offset_right = 1103.7778
+offset_bottom = 608.0
+theme = SubResource("Theme_ayt76")
+theme_override_font_sizes/normal_font_size = 64
+theme_override_font_sizes/bold_font_size = 64
+theme_override_font_sizes/bold_italics_font_size = 64
+theme_override_font_sizes/italics_font_size = 64
+theme_override_font_sizes/mono_font_size = 64
+text = "[space] >>"
+horizontal_alignment = 2
+vertical_alignment = 2
