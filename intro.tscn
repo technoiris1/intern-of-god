@@ -1,45 +1,44 @@
 [gd_scene load_steps=4 format=3 uid="uid://bqbduevmwsls3"]
 
-[ext_resource type="Script" uid="uid://hg3uiichs3gb" path="res://scripts/intro.gd" id="1_ayt76"]
-[ext_resource type="FontFile" uid="uid://dtlsps0wa2skw" path="res://assets/font/Jersey10-Regular.ttf" id="1_s2ta7"]
+[ext_resource type="Texture2D" uid="uid://c5jd5mkt1g0mj" path="res://assets/misc/introbg.png" id="1_ayt76"]
+[ext_resource type="FontFile" uid="uid://cr7gvqx0vvkqv" path="res://assets/font/Jersey10-Regular.ttf" id="1_s2ta7"]
 
 [sub_resource type="Theme" id="Theme_ayt76"]
 default_font = ExtResource("1_s2ta7")
 
 [node name="Intro" type="Node2D"]
-script = ExtResource("1_ayt76")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="TextureRect" parent="."]
 offset_right = 1152.0
 offset_bottom = 648.0
-color = Color(0, 0, 0, 1)
+texture = ExtResource("1_ayt76")
 
 [node name="skip" type="RichTextLabel" parent="."]
 offset_left = 843.0
 offset_top = 538.0
-offset_right = 1103.78
+offset_right = 1103.7778
 offset_bottom = 608.0
 theme = SubResource("Theme_ayt76")
+theme_override_font_sizes/normal_font_size = 64
+theme_override_font_sizes/bold_font_size = 64
 theme_override_font_sizes/bold_italics_font_size = 64
 theme_override_font_sizes/italics_font_size = 64
 theme_override_font_sizes/mono_font_size = 64
-theme_override_font_sizes/normal_font_size = 64
-theme_override_font_sizes/bold_font_size = 64
 text = "[space] >>"
 horizontal_alignment = 2
 vertical_alignment = 2
 
 [node name="1" type="Node" parent="."]
 
-[node name="lbl1" type="RichTextLabel" parent="1"]
+[node name="RichTextLabel" type="RichTextLabel" parent="1"]
 offset_right = 1152.0
 offset_bottom = 522.0
 theme = SubResource("Theme_ayt76")
-theme_override_font_sizes/bold_italics_font_size = 64
-theme_override_font_sizes/italics_font_size = 64
-theme_override_font_sizes/mono_font_size = 64
-theme_override_font_sizes/normal_font_size = 64
-theme_override_font_sizes/bold_font_size = 64
+theme_override_font_sizes/normal_font_size = 56
+theme_override_font_sizes/bold_font_size = 56
+theme_override_font_sizes/bold_italics_font_size = 56
+theme_override_font_sizes/italics_font_size = 56
+theme_override_font_sizes/mono_font_size = 56
 text = "Congratulations on achieving employment! 
 Well, not really, you are still just an unpaid intern."
 horizontal_alignment = 1
@@ -47,64 +46,64 @@ vertical_alignment = 1
 
 [node name="2" type="Node" parent="."]
 
-[node name="lbl2" type="RichTextLabel" parent="2"]
+[node name="RichTextLabel" type="RichTextLabel" parent="2"]
 visible = false
 offset_right = 1152.0
 offset_bottom = 522.0
 theme = SubResource("Theme_ayt76")
-theme_override_font_sizes/bold_italics_font_size = 64
-theme_override_font_sizes/italics_font_size = 64
-theme_override_font_sizes/mono_font_size = 64
-theme_override_font_sizes/normal_font_size = 64
-theme_override_font_sizes/bold_font_size = 64
+theme_override_font_sizes/normal_font_size = 56
+theme_override_font_sizes/bold_font_size = 56
+theme_override_font_sizes/bold_italics_font_size = 56
+theme_override_font_sizes/italics_font_size = 56
+theme_override_font_sizes/mono_font_size = 56
 text = "Since we can't put you on the main stuff right now, let's get you started with a practice island!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="3" type="Node" parent="."]
 
-[node name="lbl3" type="RichTextLabel" parent="3"]
+[node name="RichTextLabel" type="RichTextLabel" parent="3"]
 visible = false
 offset_right = 1152.0
 offset_bottom = 522.0
 theme = SubResource("Theme_ayt76")
-theme_override_font_sizes/bold_italics_font_size = 64
-theme_override_font_sizes/italics_font_size = 64
-theme_override_font_sizes/mono_font_size = 64
-theme_override_font_sizes/normal_font_size = 64
-theme_override_font_sizes/bold_font_size = 64
+theme_override_font_sizes/normal_font_size = 56
+theme_override_font_sizes/bold_font_size = 56
+theme_override_font_sizes/bold_italics_font_size = 56
+theme_override_font_sizes/italics_font_size = 56
+theme_override_font_sizes/mono_font_size = 56
 text = "The island you are about to see is completely barren, but it is YOUR job to make it beautiful."
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="4" type="Node" parent="."]
 
-[node name="lbl4" type="RichTextLabel" parent="4"]
+[node name="RichTextLabel" type="RichTextLabel" parent="4"]
 visible = false
 offset_right = 1152.0
 offset_bottom = 522.0
 theme = SubResource("Theme_ayt76")
-theme_override_font_sizes/bold_italics_font_size = 64
-theme_override_font_sizes/italics_font_size = 64
-theme_override_font_sizes/mono_font_size = 64
-theme_override_font_sizes/normal_font_size = 64
-theme_override_font_sizes/bold_font_size = 64
+theme_override_font_sizes/normal_font_size = 56
+theme_override_font_sizes/bold_font_size = 56
+theme_override_font_sizes/bold_italics_font_size = 56
+theme_override_font_sizes/italics_font_size = 56
+theme_override_font_sizes/mono_font_size = 56
 text = "Yes, YOUR job. Learn to use your initial powers to get islanders to move in, and help them."
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="5" type="Node" parent="."]
 
-[node name="lbl5" type="RichTextLabel" parent="5"]
+[node name="RichTextLabel" type="RichTextLabel" parent="5"]
 visible = false
 offset_right = 1152.0
 offset_bottom = 522.0
 theme = SubResource("Theme_ayt76")
-theme_override_font_sizes/bold_italics_font_size = 64
-theme_override_font_sizes/italics_font_size = 64
-theme_override_font_sizes/mono_font_size = 64
-theme_override_font_sizes/normal_font_size = 64
-theme_override_font_sizes/bold_font_size = 64
+theme_override_font_sizes/normal_font_size = 56
+theme_override_font_sizes/bold_font_size = 56
+theme_override_font_sizes/bold_italics_font_size = 56
+theme_override_font_sizes/italics_font_size = 56
+theme_override_font_sizes/mono_font_size = 56
 text = "Use your new powers to upgrade skills, unlock abilities and do more for the civilization that believes in you."
 horizontal_alignment = 1
 vertical_alignment = 1
