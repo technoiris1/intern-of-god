@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://d07pbep68r026"]
+
+[ext_resource type="PackedScene" uid="uid://bqbduevmwsls3" path="res://intro.tscn" id="1_d2ofq"]
+
+[node name="outro" type="Node2D"]
+
+[node name="outro" parent="." instance=ExtResource("1_d2ofq")]
+script = null
+
+[node name="skip" parent="outro" index="1"]
+metadata/_edit_use_anchors_ = true
+
+[node name="lbl1" parent="outro/1" index="0"]
+scale = Vector2(0.996791, 1)
+text = "Congratulations! You've passed the test, the island is livable now and humans have moved there.
+You're being promoted to god's gap year (need ideas to cover the debt chat :scheme:)
+"
+metadata/_edit_use_anchors_ = true
+
+[editable path="outro"]
